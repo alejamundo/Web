@@ -1,0 +1,19 @@
+@media (max-width: 1110px) {
+    .rcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #inputEvento{
+        width: 100% !important;
+    }
+    #inputDate{
+        width: 100% !important
+    }
+    .rbtn{
+        width: auto !important;
+        
+    }
+   
+}

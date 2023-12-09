@@ -1,0 +1,87 @@
+.body{
+    background-size: cover;
+    background-image: url("./img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:rgb(74, 128, 161);
+   
+}
+/* navegacion */
+.title{
+    font-size: 1.5rem;
+    color: rgb(90, 130, 222);
+    font-family: 'Rubik Distressed', cursive;
+}
+/* seccion ingresar texto */
+
+.flotante{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Rubik Distressed', cursive;
+}
+.area{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.advertencia{
+    padding-left: 1.5rem;
+    font-size: small;
+    color: rgb(44, 42, 42);
+}
+.card{
+    opacity: 0.8;
+}
+/* sección para mostrar texto */
+
+.section-muestra{
+    height: 500px;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+.icon{
+    padding-left: 4.5rem;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1008px) and (min-width: 969px) {
+    .flotante{
+        font-size: 20px;
+    }
+  }
+  @media screen and (max-width:970px)  {
+    .flotante{
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width:800px)  {
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+    .flotante{
+        font-size: 22px;
+    }
+    .author{
+       text-align: center;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .row>* {
+        max-width: 100%;
+        padding: 5rem;
+        display: contents;
+    }
+  }
+

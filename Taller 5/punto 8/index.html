@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula anualidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Calcula anualidades que debes pagar por tu prestamo</h1>
+        <div>
+            <label>Ingrese el valor del prestamo: </label>
+            <input type="number" id="prestamo" placeholder="Prestamo"><br><br>
+            <label>Ingrese la duración del prestamo en años: </label>
+            <input type="number" id="tiempo" placeholder="Duración"><br><br>
+            <label>Ingrese el interes (sin el %): </label>
+            <input type="number" id="interes" placeholder="Interes"><br><br>
+            <button onclick="calcular()">Calcular</button> <br> <br>
+            <label>Resultado: </label> <label id="result"></label>
+        </div>
+    </main>
+    <script>
+        function calcular() {
+            const prestamo=document.getElementById("prestamo");
+            const tiempo=document.getElementById("tiempo");
+            const interes=document.getElementById("interes");
+            const result=document.getElementById("result");
+
+            if (interes.value>0)
+            {
+                var porcentaje=prestamo.value*interes.value/100;
+                result.textContent=((prestamo.value/tiempo.value)+porcentaje)
+            }else{
+                result.textContent="Ingrese el interes de forma correcta ejemplo (5)"
+            }
+            prestamo.value=" ";
+            interes.value=" ";
+            tiempo.value=" ";
+        }
+    </script>
+</body>
+</html>
